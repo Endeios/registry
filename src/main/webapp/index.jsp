@@ -20,5 +20,30 @@
     </tbody>
 
 </table>
+
+<table id="cars-app">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>plate</td>
+            <td>brand</td>
+            <td>model</td>
+            <td>year</td>
+        </tr>
+    </thead>
+    <tbody id="cars-app-body">
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Id</td>
+            <td>plate</td>
+            <td>brand</td>
+            <td>model</td>
+            <td>year</td>
+        </tr>
+    </tfoot>
+</table>
+<script src="js/app.js"></script>
 </body>
 </html>
