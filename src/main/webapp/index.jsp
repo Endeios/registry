@@ -13,7 +13,7 @@
     <% for (int i=1;i<101;i++) {%>
 
         <tr>
-            <td><%=i%></td><td><%=fizzBuzzer.fizzBuzzer(i)%></td>
+            <td><a href="services/fizzbuzz/<%=i%>"><%=i%></a></td><td><%=fizzBuzzer.fizzBuzzer(i)%></td>
         </tr>
 
     <%}%>
