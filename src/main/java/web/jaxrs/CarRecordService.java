@@ -7,6 +7,7 @@ import web.context.EntityManagerContextListener;
 import javax.persistence.EntityManager;
 import javax.servlet.ServletContext;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
@@ -33,5 +34,11 @@ public class CarRecordService {
         return carservice.getAllCars();
     }
 
+    @POST
+    @Path("/cars")
+    @Produces({MediaType.APPLICATION_JSON})
+    public CarDTO saveCar(CarDTO carDTO){
+        return carservice.saveNewCar(carDTO);
+    }
 
 }

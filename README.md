@@ -2,7 +2,7 @@
 
 ```How did the java web applications used to be?```
 
-In the exibit you can see a reconstruction of an 
+In the exhibit you can see a reconstruction of an 
 ancient java web application, that could be dated ~2000-2010 AD.
 
 - it sports a JSP, calculating the fizz buzz of the first 100 numbers

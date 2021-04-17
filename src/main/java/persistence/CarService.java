@@ -14,11 +14,18 @@ public class CarService {
         this.entityManager = entityManager;
     }
 
-    public void saveNewCar(CarDTO carDTO){
+    public CarDTO saveNewCar(CarDTO carDTO){
         CarRecord record = asRecordForNewCar(carDTO);
         entityManager.getTransaction().begin();
         entityManager.persist(record);
         entityManager.getTransaction().commit();
+        return new CarDTO.Builder()
+                .withId(record.getId())
+                .withBrand(record.getBrand())
+                .withModel(record.getModel())
+                .withPlate(record.getPlate())
+                .withYear(record.getYear())
+                .build();
     }
 
     public List<CarDTO> getAllCars() {

@@ -36,11 +36,11 @@
     </tbody>
     <tfoot>
         <tr>
-            <td>Id</td>
-            <td>plate</td>
-            <td>brand</td>
-            <td>model</td>
-            <td>year</td>
+            <td><button id="cars-app-add-car">Add car</button></td>
+            <td><input type="text" id="cars-app-input-plate"/></td>
+            <td><input type="text" id="cars-app-input-brand"/></td>
+            <td><input type="text" id="cars-app-input-model"/></td>
+            <td><input type="text" id="cars-app-input-year"/></td>
         </tr>
     </tfoot>
 </table>
